@@ -39,7 +39,7 @@ function scene2() {
 let guide = null;
 
 let elefantclick= 0;
-let løveclick= 0;
+let løvenclick= 0;
 let giraffclick= 0;
 let flodhestclick= 0;
 let apeclick= 0;
@@ -48,13 +48,14 @@ let guideclick= 0;
 
 
 function forside() {
+    
     // Å gjøre: Gi bedre navn til alle tingene.
 
     const elefant = new Blocks.Image("bilder/elefant.jpg", { x: 0, y: 0, width: 300, height: 300 });
     const tiger = new Blocks.Image("bilder/tiger.jpg", { x: 300, y: 0, width: 300, height: 300 });
     const giraff = new Blocks.Image("bilder/giraff.jpeg", { x: 600, y: 0, width: 300, height: 300 });
     const flodhest = new Blocks.Image("bilder/flodhest.jpg", { x: 0, y: 300, width: 300, height: 300 });
-    const løve = new Blocks.Image("bilder/løve.jpg", { x: 300, y: 300, width: 300, height: 300 });
+    const løven = new Blocks.Image("bilder/løven.jpg", { x: 300, y: 300, width: 300, height: 300 });
     const ape = new Blocks.Image("bilder/ape.jpg", { x: 600, y: 300, width: 300, height: 300 });
 
 
@@ -109,14 +110,14 @@ function forside() {
             lydFlodhest.start();
         }  
     })
-    Actions.Click(løve, () => {
-        løveclick = løveclick + 1;
-        if(løveclick === 1){
-            let lydLøve = new Blocks.Sound("lyder/løve1.m4a", { loop: false, auto: true });
-            lydLøve.start();
-        } else if (løveclick === 2){
-            let lydLøve = new Blocks.Sound("lyder/løve2.m4a", { loop: false, auto: true });
-            lydLøve.start();
+    Actions.Click(løven, () => {
+        løvenclick = løvenclick + 1;
+        if(løvenclick === 1){
+            let lydLøven = new Blocks.Sound("lyder/løven1.m4a", { loop: false, auto: true });
+            lydLøven.start();
+        } else if (løvenclick === 2){
+            let lydLøven = new Blocks.Sound("lyder/løven2.m4a", { loop: false, auto: true });
+            lydLøven.start();
         }  
     })
     Actions.Click(ape, () => {
